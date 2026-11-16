@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kuma-sangaの自己紹介</title>
+  <style>
+    /* 全体の基本設定 */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      line-height: 1.7;
+      color: #1e293b;
+      background-color: #f0f7ff;
+    }
+
+    /* ヘッダー・ナビゲーション */
+    header {
+      background-color: #1e3a8a;
+      color: #ffffff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.8rem;
+      word-break: break-word;
+    }
+
+    header p {
+      margin: 0 0 1.2rem 0;
+      font-size: 1rem;
+      color: #dbeafe;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    nav a {
+      display: inline-block;
+      color: #1e3a8a;
+      background-color: #ffffff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      background-color: #bfdbfe;
+    }
+
+    /* メインコンテンツ */
+    main {
+      max-width: 800px;
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background-color: #ffffff;
+      border-left: 6px solid #0284c7;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.35rem;
+      color: #0369a1;
+      border-bottom: 2px solid #e0f2fe;
+      padding-bottom: 0.4rem;
+    }
+
+    section p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul.item-list {
+      margin: 0;
+      padding-left: 1.4rem;
+    }
+
+    ul.item-list li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* リンクエリア */
+    .link-box {
+      background-color: #e0f2fe;
+      border-radius: 8px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 2rem;
+      word-break: break-all;
+    }
+
+    .link-box p {
+      margin: 0 0 0.5rem 0;
+      font-weight: bold;
+      color: #0c4a6e;
+    }
+
+    .link-box a {
+      color: #0284c7;
+      text-decoration: underline;
+    }
+
+    /* フッター */
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.85rem;
+      color: #475569;
+    }
+
+    /* 狭い画面（スマホなど）向けの微調整 */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      section {
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>kuma-sanga</h1>
+    <p>最近の趣味は読書です！おすすめの本があればぜひ教えてください。</p>
+    <nav aria-label="ページ内メニュー">
+      <ul>
+        <li><a href="#intro">自己紹介</a></li>
+        <li><a href="#learning">今学んでいること</a></li>
+        <li><a href="#future">これからやってみたいこと</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>自己紹介</h2>
+      <p>
+        初めまして、kuma-sangaです。最近の趣味は本を読むことです。今まであまり興味がなかったのですが、『汝、星のごとく』を読んで読書にはまりました。おすすめの本があればぜひ教えてください！
+      </p>
+      <p>
+        高校3年間の探究授業で、4人グループでおもちゃの飛行機の形状と飛距離に関する実験を行いました。人の手が加わらない適切な発射台の製作や、膨大な測定条件の検証が課題でした。そこで本を購入しネットの文献も読んで発射台を吟味・自作しました。さらに発泡スチロールとプラバンの2種類の素材を使い、5種類の翼で角度を-50度から45度まで5度刻みで各30回実験しました。その結果、後退翼が最もよく飛び、-25度の角度で一番飛距離が伸びる条件を特定できました。
+      </p>
+    </section>
+
+    <section id="learning">
+      <h2>今学んでいること</h2>
+      <ul class="item-list">
+        <li>C言語の勉強</li>
+      </ul>
+    </section>
+
+    <section id="future">
+      <h2>これからやってみたいこと</h2>
+      <p>他の言語にも挑戦してみたいです。</p>
+      <ul class="item-list">
+        <li>C++</li>
+        <li>パイソン（Python）</li>
+        <li>ジャヴァ（Java）</li>
+      </ul>
+    </section>
+
+    <div class="link-box">
+      <p>公式サイト（GitHubリポジトリ）</p>
+      <a href="https://github.com/kuma-sanga/my-website.git" target="_blank" rel="noopener noreferrer">
+        https://github.com/kuma-sanga/my-website.git
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; kuma-sanga</p>
+  </footer>
+
+</body>
+</html>
